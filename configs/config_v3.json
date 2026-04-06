@@ -1,0 +1,71 @@
+{
+  "labels": {
+    "kick": ["kick", "kicks"],
+    "snare": ["snare", "snares"],
+    "clap": ["clap", "claps"],
+    "snap": ["snap", "snaps"],
+    "open_hat": ["open hat", "open hats", "hat open", "oh"],
+    "closed_hat": ["closed hat", "closed hats", "hat closed", "ch"],
+    "cymbal": ["cymbal", "cymbals"],
+    "808": ["808", "808s"],
+    "percussion": ["percussion", "perc", "percs"],
+    "bass": ["bass", "basses"],
+    "ambience": ["ambience", "ambient", "atmos", "atmosphere"],
+    "textures": ["texture", "textures"],
+    "vocals": ["vocal", "vocals", "vox", "chants", "chant", "vocal chops"],
+    "rimshot": ["rim", "rims", "rimshot", "rimshots"],
+    "tom": ["tom", "toms"],
+    "triangle": ["triangle", "triangles"],
+    "bongo & conga": ["bongo", "conga", "congas", "bongos", "bongo & conga"]
+  },
+  "allowed_extensions": [".wav", ".aif", ".aiff"],
+  "duration_limits_sec": {
+    "808": 20.0,
+    "bass": 20.0,
+    "kick": 10.0,
+    "snare": 10.0,
+    "open_hat": 10.0,
+    "closed_hat": 8.0,
+    "clap": 10.0,
+    "snap": 10.0,
+    "cymbal": 17.0,
+    "percussion": 15.0,
+    "ambience": 15.0,
+    "textures": 20.0,
+    "vocals": 40.0,
+    "rimshot": 10.0,
+    "tom": 8.0,
+    "triangle": 8.0,
+    "bongo & conga" : 4.0
+  },
+  "exclude_filename_tokens": [
+    "loop",
+    "fill",
+    "break",
+    "top loop",
+    "construction",
+    "stem",
+    "groove"
+  ],
+  "audio": {
+    "target_sample_rate": 22050,
+    "mono": true,
+    "trim_silence": true
+  },
+  "windows_sec": {
+    "default": 4.0,
+    "808": 10.0,
+    "bass": 10.0,
+    "percussion": 5.0,
+    "cymbal": 6.0,
+    "tom": 5.0,
+    "triangle": 5.0,
+    "vocals": 15.0,
+    "textures": 10.0,
+    "ambience": 12.0
+  },
+  "inference": {
+    "top_k": 3,
+    "confidence_threshold": 0.80
+  }
+}

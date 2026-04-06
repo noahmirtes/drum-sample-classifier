@@ -1,0 +1,47 @@
+{
+  "labels": {
+    "kick": ["kick", "kicks"],
+    "snare": ["snare", "snares"],
+    "clap": ["clap", "claps"],
+    "snap": ["snap", "snaps"],
+    "open_hat": ["open hat", "open hats", "hat open", "oh"],
+    "closed_hat": ["closed hat", "closed hats", "hat closed", "ch"],
+    "cymbal": ["cymbal", "cymbals"],
+    "808": ["808", "808s"]
+  },
+  "allowed_extensions": [".wav", ".aif", ".aiff"],
+  "duration_limits_sec": {
+    "kick": 2.0,
+    "snare": 2.5,
+    "clap": 3.0,
+    "snap": 2.0,
+    "open_hat": 2.0,
+    "closed_hat": 1.5,
+    "cymbal": 5.0,
+    "808": 8.0
+  },
+  "exclude_filename_tokens": [
+    "loop",
+    "fill",
+    "break",
+    "bpm",
+    "top loop",
+    "construction",
+    "stem",
+    "percussion",
+    "sfx"
+  ],
+  "audio": {
+    "target_sample_rate": 22050,
+    "mono": true,
+    "trim_silence": true
+  },
+  "windows_sec": {
+    "default": 2.0,
+    "808": 4.0
+  },
+  "inference": {
+    "top_k": 3,
+    "confidence_threshold": 0.7
+  }
+}
